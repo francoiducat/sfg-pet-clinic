@@ -4,7 +4,7 @@ import java.util.Set;
 
 public interface CrudService<T, ID> {
 
-  Set<T> finddAll();
+  Set<T> findAll();
 
   T findById(ID id);
 
@@ -12,5 +12,5 @@ public interface CrudService<T, ID> {
 
   void delete(T object);
 
-  void deleteByID(T object);
+  void deleteById(ID id);
 }
