@@ -2,9 +2,9 @@ package net.ducatillon.sfgpetclinic.services.map;
 
 import java.util.Set;
 import net.ducatillon.sfgpetclinic.model.Owner;
-import net.ducatillon.sfgpetclinic.services.CrudService;
+import net.ducatillon.sfgpetclinic.services.OwnerService;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
   @Override
   public Set<Owner> findAll() {
@@ -29,5 +29,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
   @Override
   public void deleteById(Long id) {
     super.deleteById(id);
+  }
+
+  @Override
+  public Owner findByLastName(String lastName) {
+    return null;
   }
 }
