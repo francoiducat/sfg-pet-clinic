@@ -3,7 +3,9 @@ package net.ducatillon.sfgpetclinic.services.map;
 import java.util.Set;
 import net.ducatillon.sfgpetclinic.model.Owner;
 import net.ducatillon.sfgpetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
   @Override
