@@ -3,7 +3,9 @@ package net.ducatillon.sfgpetclinic.services.map;
 import java.util.Set;
 import net.ducatillon.sfgpetclinic.model.Pet;
 import net.ducatillon.sfgpetclinic.services.CrudService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
 
   @Override
