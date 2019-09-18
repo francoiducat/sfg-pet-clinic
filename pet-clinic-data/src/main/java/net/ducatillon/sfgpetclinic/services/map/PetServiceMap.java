@@ -2,11 +2,11 @@ package net.ducatillon.sfgpetclinic.services.map;
 
 import java.util.Set;
 import net.ducatillon.sfgpetclinic.model.Pet;
-import net.ducatillon.sfgpetclinic.services.CrudService;
+import net.ducatillon.sfgpetclinic.services.PetService;
 import org.springframework.stereotype.Service;
 
 @Service
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
   @Override
   public Set<Pet> findAll() {
